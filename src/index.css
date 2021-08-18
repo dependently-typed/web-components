@@ -14,33 +14,11 @@ body {
   box-sizing: border-box;
 }
 
-html {
-  font-family: var(--font-serif);
+:not(:defined) {
+  visibility: hidden;
 }
 
 pre,
 code {
   font-family: var(--font-mono);
-}
-
-dt-nav ul {
-  display: flex;
-  padding: 0px;
-  list-style: none;
-}
-
-dt-nav ul > li {
-  margin-left: 16px;
-}
-
-dt-footer ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-}
-
-dt-footer ul > li {
-  margin: 0px 8px;
 }

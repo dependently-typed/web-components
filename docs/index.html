@@ -1,31 +1,23 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="utf-8" />   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/styles/index.css"></link>
   </head>
   <body>
-<style>
-  body {
-    font-family: "Inria Serif";
-  }
-</style>
     <dt-theme-provider>
       <dt-nav>
-        <div slot="left">
-          <dt-logo></dt-logo>
-          <span>dependently-typed</span>
-        </div>
-        <ul slot="right">
-          <li>hi</li>
-          <li>there</li>
-        </ul>
+        <dt-logo slot="icon"></dt-logo>
+        <a href="/" slot="title">dependently-typed</a>
+        <span slot="subtitle">wiki</span>
+        <li>hi</li>
+        <li>there</li>
       </dt-nav>
       <dt-button></dt-button>
       <dt-footer>
-        <ul>
-          <li>a</li>
-          <li>b</li>
-        </ul>
+        <li>a</li>
+        <li>b</li>
       </dt-footer>
     </dt-theme-provider>
     <script type="module" src="/dist/index.js"></script>

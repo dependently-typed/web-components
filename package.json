@@ -1,8 +1,11 @@
 {
   "name": "@dependently-typed/ui",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Web-components used by dependently-typed",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "author": "Elton Pinto",
   "license": "MIT",
   "scripts": {
@@ -15,7 +18,8 @@
     "dev:11ty": "eleventy --serve",
     "lint": "yarn lint:prettier && yarn lint:eslint",
     "lint:prettier": "prettier --write src",
-    "lint:eslint": "eslint src"
+    "lint:eslint": "eslint src",
+    "prepare": "yarn build && cp src/index.css dist"
   },
   "dependencies": {
     "lit": "^2.0.0-rc.2"

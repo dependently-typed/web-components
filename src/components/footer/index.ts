@@ -15,13 +15,28 @@ export class Footer extends LitElement {
       justify-content: center;
       align-items: center;
     }
+
+    ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0px;
+    }
+
+    ul > ::slotted(li) {
+      margin: 0px 8px;
+    }
   `;
 
   render() {
     return html`
       <footer>
-        <slot></slot>
+        <ul>
+          <slot></slot>
+        </ul>
       </footer>
-    `
+    `;
   }
 }

@@ -4,8 +4,13 @@ import { customElement, property } from "lit/decorators.js";
 @customElement("dt-button")
 export class Button extends LitElement {
   static styles = css`
+    :host {
+      display: inline-block;
+    }
+
     button {
-      font-family: var(--font-mono);
+      cursor: pointer;
+      padding: var(--size-xs);
     }
   `;
 
