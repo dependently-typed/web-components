@@ -26,6 +26,8 @@ export class ThemeProvider extends LitElement {
     return [
       css`
         :host {
+          display: block;
+
           --font-mono: "Roboto Mono", monospace;
           --font-serif: "Inria Serif", serif;
           --color-gray: #6b6b6b;
